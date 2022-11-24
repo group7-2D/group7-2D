@@ -4,4 +4,4 @@ from app import application
 @application.route('/')
 @application.route('/index')
 def index():
-    return render_template('index.html', title='')
+    return render_template('index.html', title='2D Project Group 7')
