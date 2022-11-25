@@ -126,6 +126,3 @@ Now, you can run Flask by typing:
 flask run
 You should see that some output will be thrown out, which one of them would be:
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit) 
-# Expected Output
-The expected output can be found in this video.
-(Link video)
