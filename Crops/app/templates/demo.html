@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./stylesheets/demo.css">
+<link rel="stylesheet" href="./stylesheets/myown.css">
+<link rel="stylesheet" href="./stylesheets/active.css">
+</head>
+<body>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+    <a href="#background-info" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-info-circle"></i> Background Information </a>
+    <a href="#problem-statement" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Problem Statement </a>
+    <a href="#data-collection" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Data Collection</a>
+    <a href="#graph" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bar-chart"></i> Graph Visualisation</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <!--
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+         comment out <i class="fa fa-search"></i>
+         -->
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#background-info" class="w3-bar-item w3-button" onclick="toggleFunction()">Background Information</a>
+    <a href="#problem-statement" class="w3-bar-item w3-button" onclick="toggleFunction()">Problem Statement</a>
+    <a href="#data-collection" class="w3-bar-item w3-button" onclick="toggleFunction()">Data Collection</a>
+    <a href="#graph" class="w3-bar-item w3-button" onclick="toggleFunction()">Graph Visualisation</a>
+    <!-- comment out <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+<!--This is the header-->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-light-grey">
+  <!-- <div class="w3-display-middle" style="white-space:nowrap;"> -->
+    <!-- comment out <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DAI HTML LESSON 2</span> -->
+  </div>
+</div>
+
+<div> 
+  <script type="module">import * as library from './static/__target__/library.js'; window.library = library;</script> 
+      <br></br>
+        <h1 class="w3-center">Welcome, User!</h1> 
+        <p class="w3-center"> 
+         Enter the amount of resources available and our model will optimise the values and predict the number of crop production, you can expect. 
+        </p> 
+        <p class="w3-center"> 
+         <div id="land">Enter the land available:</div> 
+         <input type='text' name='land' id='land'/> 
+        </p> 
+        <p class="w3-center"> 
+         <div id="water">Enter the water available:</div> 
+         <input type='text' name='water' id='water' class="w3-center"/> 
+        </p> 
+        <p class="w3-center"> 
+         <div id="machinery">Enter the machinery available:</div> 
+         <input type='text' name='machinery' id='machinery'/> 
+        </p> 
+        <p class="w3-center"> 
+         <div id="predict">...</div></div> tonnes of crop production will be produced.
+         <button onclick="library.calculated2()">Predict</button> 
+        </p> 
+</div>
+
+<!-- Background Information -->
+<div class="w3-container w3-content w3-padding-64" id="background-info">
+  <h2 class="w3-center">Background Information</h2>
+  <p style="text-align:center">Recently, on 15 November 2022, the world population hit 8 billion, just 11 years after reaching 7 billion. With 70% of the growth to the eighth billion happening in less developed countries (source), it strains communities that are already struggling to feed (source), with resources for food production being finite and prone to depletion, threatening food supply. Given that Asia is projected to have the highest population by 2050, and that increasing population often drive-up demand for food, we aim to determine the number of resources required such that we can be prepared with enough crops to feed Asia’s population. </p>
+</div>
+
+<!-- Problem Statement -->
+<div class="w3-container w3-content w3-padding-64" id="problem-statement">
+  <div class="w3-light-grey">
+  <br><br>
+  <h2 class="w3-center">Problem Statement</h2>
+  <p style="text-align:center">How might we predict the number of resources needed for crop production such that there is sufficient crop supply for countries in Asia? </p>
+  <br><br>
+  </div>
+</div>
+
+<!-- Data Collection -->
+<div class="w3-container w3-content w3-padding-64" id="data-collection">
+  <h2 class="w3-center">Data Collection</h2>
+  <br><br>
+  <h3 class="w3-wide w3-center w3-light-grey">Target</h3>
+  <p class="w3-center">Crop Production</p>
+  <br><br>
+  <h3 class="w3-wide w3-center w3-light-grey">Initial Features</h3>
+  <p class="w3-center">1) Area of Agricultural Land</p>
+  <p class="w3-center">2) Freshwater Withdrawal for Agriculture</p>
+  <p class="w3-center">3) Number of Agricultural Machines</p>
+  <p class="w3-center">4) Employment in Agriculture</p>
+  <br><br>
+  <h3 class="w3-wide w3-center w3-light-grey">Initial Model</h3>
+  <img src="./static/images/Model.png" class="w3-round w3-image w3-center" alt="data" width="300" height="400">
+  <div class="w3-container w3-content w3-padding-64">
+  <br><br>
+  <h3 class="w3-wide w3-center w3-light-grey">Excel</h3>
+  <iframe width="900" height="600" frameborder="0" scrolling="no" src="https://sutdapac-my.sharepoint.com/personal/ramita_bharathithasan_mymail_sutd_edu_sg/_layouts/15/Doc.aspx?sourcedoc={29795ce9-6938-46be-a31b-01ae80b7d0d9}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&edrtees6=false&resen=false"></iframe>
+</div>  
+
+<!-- Graphs -->
+<div class="w3-content w3-container w3-padding-64" id="graph">
+    <h3 class="w3-center w3-light-grey">Graph Visualisation</h3>
+      <img src="./static/images/Land.jpg" class="w3-round w3-image w3-center" alt="data" width="400" height="400">
+      <p class="w3-center"><b>Area of Agricultural Land</b></p>
+      <img src="./static/images/Water.jpg" class="w3-round w3-image w3-center" alt="data" width="400" height="400">
+      <p class="w3-center"><b>Freshwater Withdrawal for Agriculture</b></p>
+      <img src="./static/images/Machinery.jpg" class="w3-round w3-image w3-center" alt="data" width="400" height="400">
+      <p class="w3-center"><b>Number of Agricultural Machines</b></p>
+      <img src="./static/images/Labour.png" class="w3-round w3-image w3-center" alt="data" width="400" height="400">
+      <p class="w3-center"><b>Employment in Agriculture</b></p>
+</div>
+
+<!-- Container bars divisions  -->
+<div class="w3-content w3-container w3-padding-64" id="bars">
+
+  <h3 class="w3-center">Adjusted R Values</h3>
+  <p class="w3-wide">Before Model Improvement</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-center" style="width:0%">-28.6</div>
+  </div>
+  <p class="w3-wide">After First Model Improvement Attempt</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:98.2%">0.982</div>
+  </div>
+  <p class="w3-wide">After Second Model Improvement Attempt</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:98.6%">0.986</div>
+  </div>
+</div>
+
+<!-- Group Members -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <div class="w3-light-grey">
+  <br></br>
+  <h2 class="w3-center">Group Members</h2>
+  <p class="w3-center">Andrea Cheah</p>
+  <p class="w3-center">Elisabeth Fung</p>
+  <p class="w3-center">Mohana Selvakumar</p>
+  <p class="w3-center">Ramita Bharathithasan</p>
+  <p class="w3-center">Sharanya Seth</p>
+  <br></br></div>
+  </div>
+</div>
